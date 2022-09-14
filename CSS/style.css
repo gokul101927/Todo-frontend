@@ -1,0 +1,116 @@
+body {
+    background-color: black;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.header-container {
+    background-color: #181818;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    border: none;
+    margin: 0px;
+}
+
+
+#left-col {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+.col-left {
+    width: 50px;
+    justify-content: center;
+    height: 40px;
+    padding: 2px;
+}
+
+.home-logo {
+    cursor: pointer;
+}
+
+form {
+    width: 250px;
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 10px;
+}
+  
+.search-bar {
+    background: transparent;
+    border: none;
+    width: 250px;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: inherit;
+}
+
+.search-bar::placeholder {
+    color: #bbb;
+}
+
+.search-bar:focus {
+    outline: none;
+}
+
+.search-logo {
+    position: relative;
+    background: transparent;
+    border: none;
+}
+
+.search-logo:hover {
+    cursor: pointer;
+}
+
+#right-col {
+    position: relative;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding-left: 900px;
+}
+
+.checkbox {
+    opacity: 0;
+    pointer-events: none;
+    touch-action: none;
+}
+
+.profile-icon {
+    height: 40px;
+}
+
+.profile-dropdowns {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    flex-direction: column;
+    border: 1px solid #555;
+    background-color: black;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10 px;
+    right: 0;
+    border-radius: 10px;
+    
+}
+
+.profile-dropdowns a {
+    margin: 3px;
+    color: #bbb;
+}
+
+.checkbox:checked ~ .profile-dropdowns {
+    display: flex;
+}
